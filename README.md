@@ -14,7 +14,6 @@ peform the same process for analysis.
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1: 
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
   * `log_model = LogsiticRegression(random_stage=1)`
   * `accuracy = 0.944`
   * `precision = Healthy Loan: 1.00 --- High-Risk Loan: 0.87`
@@ -24,7 +23,6 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
   * `ros_model = RandomOverSampler(random_state = 1)`
   * `accuracy = 0.995`
   * `precision = Healthy Loan: 1.00 --- High-Risk Loan: 0.87`
@@ -33,8 +31,5 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+From the results above, we can observe both models can predict the outcome of a loan well. Our resample method, using `RandomOverSample` is
+more accurate and better predicts if a loan will be a high-risk loan `0.995 > 0.944`. Moreover, We can observe the recall of for high-risk loans increase when implementing the `RandomOverSample` `0.89 -> 1.00`.  This means, in our original mode, 89% of high-risk loans were identified in model 1, while 100% of high-risk loans were identified in model 2. Overall, I recommend this model. 
