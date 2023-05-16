@@ -6,19 +6,30 @@ heathly loans and 2,500 high-risk loans. I display this using `y.value_counts`.
 
 I start by training training my model`log_model = LogsiticRegression(random_stage=1)`, fitting my model `log_model.fit(X_train, y_train)`,
 and making my predictions `testing_prediction = log_model.predict(X_test)`.  After I review the results - I will discuss this later in my 
-analysis - I decided try a resampling menthod `RandomOversampling`. With my new model `ros_model = RandomOverSampler(random_state = 1)` I peform the same process for analysis. 
+analysis - I decided try a resampling menthod `RandomOversampling`. With my new model `ros_model = RandomOverSampler(random_state = 1)` I 
+peform the same process for analysis. 
 
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
-* Machine Learning Model 1:
+* Machine Learning Model 1: 
   * Description of Model 1 Accuracy, Precision, and Recall scores.
+  * `log_model = LogsiticRegression(random_stage=1)`
+  * `accuracy = 0.944`
+  * `precision = Healthy Loan: 1.00 --- High-Risk Loan: 0.87`
+  * `recall = Healthy Loan: 1.00 --- High-Risk Loan: 0.89` 
+  * `f1-score = Healthy Loan: 1.00 --- High-Risk Loan: 0.88 `
 
 
 
 * Machine Learning Model 2:
   * Description of Model 2 Accuracy, Precision, and Recall scores.
+  * `ros_model = RandomOverSampler(random_state = 1)`
+  * `accuracy = 0.995`
+  * `precision = Healthy Loan: 1.00 --- High-Risk Loan: 0.87`
+  * `recall = Healthy Loan: 1.00 --- High-Risk Loan: 1.00` 
+  * `f1-score = Healthy Loan: 1.00 --- High-Risk Loan: 0.93 `
 
 ## Summary
 
