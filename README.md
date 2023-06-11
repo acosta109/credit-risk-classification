@@ -11,8 +11,6 @@ peform the same process for analysis.
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
-
 * Machine Learning Model 1: 
   * `log_model = LogsiticRegression(random_stage=1)`
   * `accuracy = 0.944`
